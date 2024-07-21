@@ -1,3 +1,3 @@
 # OpenLaptop
 
-一个公共笔记本测评平台。
+An open benchmark of notebooks.
