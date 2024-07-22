@@ -26,8 +26,6 @@ class Notebook(db.Model):
     __tablename__ = 'notebooks'
     id = db.Column(db.Integer, primary_key=True)
     model = db.Column(db.String(120), nullable=False)
-    solution = db.Column(db.Text, nullable=False)
-    answer = db.Column(db.Text, nullable=False)
     tests = db.relationship('Test', backref='notebook', lazy=True)
 
     def __repr__(self):
